@@ -1,0 +1,18 @@
+#Carpenter's Benchmark Script
+#Comment out lines to avoid execution
+
+
+
+
+./sim-outorder -config config/default.cfg -redir:sim tests/results/compress95.sim tests/bench/compress95.alpha <  tests/bench/compress95.in  &
+./sim-outorder -config config/default.cfg -max:inst 10000000 -redir:sim tests/results/go.sim tests/bench/go.alpha 50 9  tests/bench/2stone9.in &
+./sim-outorder -config config/default.cfg -max:inst 10000000 -redir:sim tests/results/cc1.sim tests/bench/cc1.alpha -O  tests/bench/1stmt.i &
+./sim-outorder -config config/default.cfg -redir:sim tests/results/anagram.sim tests/bench/anagram.alpha words <  tests/bench/anagram.in  &
+./sim-outorder -config config/default.cfg -redir:sim tests/results/test-args.sim tests/bin/test-args &
+./sim-outorder -config config/default.cfg -redir:sim tests/results/test-dirent.sim tests/bin/test-dirent &
+./sim-outorder -config config/default.cfg -redir:sim tests/results/test-fmath.sim tests/bin/test-fmath &
+./sim-outorder -config config/default.cfg -redir:sim tests/results/test-llong.sim tests/bin/test-llong &
+./sim-outorder -config config/default.cfg -redir:sim tests/results/test-lswlr.sim tests/bin/test-lswlr &
+./sim-outorder -config config/default.cfg -redir:sim tests/results/test-math.sim tests/bin/test-math &
+./sim-outorder -config config/default.cfg -redir:sim tests/results/test-printf.sim tests/bin/test-printf &
+

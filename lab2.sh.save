@@ -1,0 +1,12 @@
+# Tyler McCabe
+# Professor Carpenter
+# Lab 2
+# 5-26-2016
+
+
+./sim-outorder -config config/default.cfg -max:inst 10000000 -redir:sim tests/results/go.sim tests/bench/go.alpha 50 9  tests/bench/2stone9.in &
+./sim-outorder -config config/default.cfg -max:inst 10000000 -redir:sim tests/results/cc1.sim tests/bench/cc1.alpha -O  tests/bench/1stmt.i &
+./sim-outorder -config config/default.cfg -redir:sim tests/results/anagram.sim tests/bench/anagram.alpha words <  tests/bench/anagram.in
+
+
+

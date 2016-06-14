@@ -1,0 +1,35 @@
+------------Taken-----------------
+Taken: Compress95
+sim_IPC                      0.4607 # instructions per cycle
+sim_cycle                    192803 # total simulation time in cycles
+Taken: 2stone9
+sim_IPC                      0.5087 # instructions per cycle
+sim_cycle                  19658649 # total simulation time in cycles
+Taken: 1stmt
+sim_IPC                      0.4559 # instructions per cycle
+sim_cycle                  21935424 # total simulation time in cycles
+Taken: anagram
+sim_IPC                      0.2418 # instructions per cycle
+sim_cycle                     19761 # total simulation time in cycles
+------------------------------------
+------------Perfect-----------------
+Perfect: Compress95
+sim_IPC                      0.5304 # instructions per cycle
+sim_cycle                    167481 # total simulation time in cycles
+Perfect: 2stone9
+sim_IPC                      0.6754 # instructions per cycle
+sim_cycle                  14806896 # total simulation time in cycles
+Perfect: 1stmt
+sim_IPC                      0.5912 # instructions per cycle
+sim_cycle                  16914612 # total simulation time in cycles
+Perfect: anagram
+sim_IPC                      0.2782 # instructions per cycle
+sim_cycle                     17173 # total simulation time in cycles
+------------Bimodal-----------------
+########SIZE 1##############
+Bimod 1: Compress95
+sim_IPC                      0.5261 # instructions per cycle
+sim_cycle                    168830 # total simulation time in cycles
+Bimod 1: 2stone9
+sim_IPC                      0.5948 # instructions per cycle
+sim_cycle                  16813188 # total simulation time in cycles

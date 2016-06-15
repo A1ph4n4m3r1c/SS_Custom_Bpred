@@ -104,8 +104,7 @@ enum bpred_class {
   BPred2bit,			/* 2-bit saturating cntr pred (dir mapped) */
   BPredTaken,			/* static predict taken */
   BPredNotTaken,		/* static predict not taken */
-  BPred_NUM,
-  CustomPredictor              //CUSTOM Addition 
+  BPred_NUM
 };
 
 /* an entry in a BTB */

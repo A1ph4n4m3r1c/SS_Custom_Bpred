@@ -1,35 +1,148 @@
-------------Taken-----------------
-Taken: Compress95
-sim_IPC                      0.4607 # instructions per cycle
-sim_cycle                    192803 # total simulation time in cycles
-Taken: 2stone9
-sim_IPC                      0.5087 # instructions per cycle
-sim_cycle                  19658649 # total simulation time in cycles
-Taken: 1stmt
-sim_IPC                      0.4559 # instructions per cycle
-sim_cycle                  21935424 # total simulation time in cycles
-Taken: anagram
-sim_IPC                      0.2418 # instructions per cycle
-sim_cycle                     19761 # total simulation time in cycles
-------------------------------------
-------------Perfect-----------------
-Perfect: Compress95
-sim_IPC                      0.5304 # instructions per cycle
-sim_cycle                    167481 # total simulation time in cycles
-Perfect: 2stone9
-sim_IPC                      0.6754 # instructions per cycle
-sim_cycle                  14806896 # total simulation time in cycles
-Perfect: 1stmt
-sim_IPC                      0.5912 # instructions per cycle
-sim_cycle                  16914612 # total simulation time in cycles
-Perfect: anagram
-sim_IPC                      0.2782 # instructions per cycle
-sim_cycle                     17173 # total simulation time in cycles
-------------Bimodal-----------------
-########SIZE 1##############
-Bimod 1: Compress95
-sim_IPC                      0.5261 # instructions per cycle
-sim_cycle                    168830 # total simulation time in cycles
-Bimod 1: 2stone9
-sim_IPC                      0.5948 # instructions per cycle
-sim_cycle                  16813188 # total simulation time in cycles
+Compress95: issue:inorder true  issue:width 1 decode:width 1 res:ialu 1 
+sim_IPC                      0.5873 # instructions per cycle
+sim_cycle                     68114 # total simulation time in cycles
+Compress95: issue:inorder true  issue:width 1 decode:width 1 res:ialu 4
+sim_IPC                      0.5873 # instructions per cycle
+sim_cycle                     68114 # total simulation time in cycles
+Compress95: issue:inorder true  issue:width 1 decode:width 4 res:ialu 1
+sim_IPC                      0.5873 # instructions per cycle
+sim_cycle                     68114 # total simulation time in cycles
+Compress95: issue:inorder true  issue:width 1 decode:width 4 res:ialu 4 
+sim_IPC                      0.5873 # instructions per cycle
+sim_cycle                     68114 # total simulation time in cycles
+Compress95: issue:inorder true  issue:width 4 decode:width 1 res:ialu 1 
+sim_IPC                      0.5873 # instructions per cycle
+sim_cycle                     68114 # total simulation time in cycles
+Compress95: issue:inorder true  issue:width 4 decode:width 1 res:ialu 4 
+sim_IPC                      0.5873 # instructions per cycle
+sim_cycle                     68114 # total simulation time in cycles
+Compress95: issue:inorder true  issue:width 4 decode:width 4 res:ialu 1
+sim_IPC                      0.5873 # instructions per cycle
+sim_cycle                     68114 # total simulation time in cycles
+Compress95: issue:inorder true  issue:width 4 decode:width 4 res:ialu 4 
+sim_IPC                      0.5873 # instructions per cycle
+sim_cycle                     68114 # total simulation time in cycles
+Compress95: issue:inorder true  issue:width 4 decode:width 1 res:ialu 1
+sim_IPC                      0.5886 # instructions per cycle
+sim_cycle                     68071 # total simulation time in cycles
+Compress95: issue:inorder false issue:width 1 decode:width 1 res:ialu 4 
+sim_IPC                      0.5886 # instructions per cycle
+sim_cycle                     68071 # total simulation time in cycles
+Compress95: issue:inorder false issue:width 1 decode:width 4 res:ialu 1 
+sim_IPC                      0.5886 # instructions per cycle
+sim_cycle                     68071 # total simulation time in cycles
+Compress95: issue:inorder false issue:width 1 decode:width 4 res:ialu 4
+sim_IPC                      0.5886 # instructions per cycle
+sim_cycle                     68071 # total simulation time in cycles
+Compress95: issue:inorder false issue:width 4 decode:width 1 res:ialu 1
+sim_IPC                      0.5886 # instructions per cycle
+sim_cycle                     68071 # total simulation time in cycles
+Compress95: issue:inorder false issue:width 4 decode:width 1 res:ialu 4
+sim_IPC                      0.5886 # instructions per cycle
+sim_cycle                     68071 # total simulation time in cycles
+Compress95: issue:inorder false issue:width 4 decode:width 4 res:ialu 1
+sim_IPC                      0.5886 # instructions per cycle
+sim_cycle                     68071 # total simulation time in cycles
+Compress95: issue:inorder false issue:width 4 decode:width 4 res:ialu 4
+sim_IPC                      0.5886 # instructions per cycle
+sim_cycle                     68071 # total simulation time in cycles
+--------------------------------------------
+Benchmark 2: Anagram
+Anagram:   issue:inorder true  issue:width 1 decode:width 1 res:ialu 1
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:   issue:inorder true  issue:width 1 decode:width 1 res:ialu 4
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:   issue:inorder true  issue:width 1 decode:width 4 res:ialu 1
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:   issue:inorder true  issue:width 1 decode:width 4 res:ialu 4
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:   issue:inorder true  issue:width 4 decode:width 1 res:ialu 1
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:   issue:inorder true  issue:width 4 decode:width 1 res:ialu 4
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:   issue:inorder true  issue:width 4 decode:width 4 res:ialu 1
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:   issue:inorder true  issue:width 4 decode:width 4 res:ialu 4 
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:    issue:inorder false issue:width 1 decode:width 1 res:ialu 1
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:   issue:inorder false issue:width 1 decode:width 1 res:ialu 4
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:   issue:inorder false issue:width 1 decode:width 4 res:ialu 1
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:   issue:inorder false issue:width 1 decode:width 4 res:ialu 4 
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:    issue:inorder false issue:width 4 decode:width 1 res:ialu 1
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:   issue:inorder false issue:width 4 decode:width 1 res:ialu 4
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:   issue:inorder false issue:width 4 decode:width 4 res:ialu 1
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+Anagram:    issue:inorder false issue:width 4 decode:width 4 res:ialu 4
+sim_IPC                      0.2594 # instructions per cycle
+sim_cycle                     18617 # total simulation time in cycles
+--------------------------------------------
+Benchmark 3: Test-args
+Test-args:  issue:inorder true  issue:width 1 decode:width 1 res:ialu 1
+sim_IPC                      0.4512 # instructions per cycle
+sim_cycle                     33681 # total simulation time in cycles
+Test-args:   issue:inorder true  issue:width 1 decode:width 1 res:ialu 4 
+sim_IPC                      0.4512 # instructions per cycle
+sim_cycle                     33681 # total simulation time in cycles
+Test-args:   issue:inorder true  issue:width 1 decode:width 4 res:ialu 1
+sim_IPC                      0.4512 # instructions per cycle
+sim_cycle                     33681 # total simulation time in cycles
+Test-args:  issue:inorder true  issue:width 1 decode:width 4 res:ialu 4 
+sim_IPC                      0.4512 # instructions per cycle
+sim_cycle                     33681 # total simulation time in cycles
+Test-args:  issue:inorder true  issue:width 4 decode:width 1 res:ialu 1 
+sim_IPC                      0.4512 # instructions per cycle
+sim_cycle                     33681 # total simulation time in cycles
+Test-args:    issue:inorder true  issue:width 4 decode:width 1 res:ialu 4 
+sim_IPC                      0.4512 # instructions per cycle
+sim_cycle                     33681 # total simulation time in cycles
+Test-args:  issue:inorder true  issue:width 4 decode:width 4 res:ialu 1
+sim_IPC                      0.4512 # instructions per cycle
+sim_cycle                     33681 # total simulation time in cycles
+Test-args:  issue:inorder true  issue:width 4 decode:width 4 res:ialu 4
+sim_IPC                      0.4512 # instructions per cycle
+sim_cycle                     33681 # total simulation time in cycles
+Test-args:  issue:inorder false issue:width 1 decode:width 1 res:ialu 1
+sim_IPC                      0.4514 # instructions per cycle
+sim_cycle                     33634 # total simulation time in cycles
+Test-args:   issue:inorder false issue:width 1 decode:width 1 res:ialu 4
+sim_IPC                      0.4514 # instructions per cycle
+sim_cycle                     33634 # total simulation time in cycles
+Test-args:  issue:inorder false issue:width 1 decode:width 4 res:ialu 1 
+sim_IPC                      0.4514 # instructions per cycle
+sim_cycle                     33634 # total simulation time in cycles
+Test-args:   issue:inorder false issue:width 1 decode:width 4 res:ialu 4 
+sim_IPC                      0.4514 # instructions per cycle
+sim_cycle                     33634 # total simulation time in cycles
+Test-args:  issue:inorder false issue:width 4 decode:width 1 res:ialu 1
+sim_IPC                      0.4514 # instructions per cycle
+sim_cycle                     33634 # total simulation time in cycles
+Test-args:  issue:inorder false issue:width 4 decode:width 1 res:ialu 4
+sim_IPC                      0.4514 # instructions per cycle
+sim_cycle                     33634 # total simulation time in cycles
+Test-args:  issue:inorder false issue:width 4 decode:width 4 res:ialu 1 
+sim_IPC                      0.4514 # instructions per cycle
+sim_cycle                     33634 # total simulation time in cycles
+Test-args:  issue:inorder false issue:width 4 decode:width 4 res:ialu 4
+sim_IPC                      0.4514 # instructions per cycle
+sim_cycle                     33634 # total simulation time in cycles

@@ -190,6 +190,13 @@ sim_check_options(struct opt_odb_t *odb, int argc, char **argv)
       /* static predictor, not taken */
       pred = bpred_create(BPredTaken, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     }
+
+   else if (!mystricmp(pred_type, "CustomPredictor")) // CUSTOM Addition Custom Predictor
+    {
+      /* static predictor, not taken */
+      pred = bpred_create(CustomPredictor, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    }
+
   else if (!mystricmp(pred_type, "nottaken"))
     {
       /* static predictor, taken */

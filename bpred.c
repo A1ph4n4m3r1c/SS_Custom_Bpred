@@ -113,6 +113,14 @@ bpred_create(enum bpred_class class,	/* type of predictor to create */
     /* no other state */
     break;
 
+  // CUSTOM Predictor Tyler 6-15-2016
+  case CustomPredictor:
+  break;
+
+
+
+
+
   default:
     panic("bogus predictor class");
   }
@@ -168,6 +176,9 @@ bpred_create(enum bpred_class class,	/* type of predictor to create */
   case BPredNotTaken:
     /* no other state */
     break;
+
+ case CustomPredictor:   //CUSTOM Addition
+ break;
 
   default:
     panic("bogus predictor class");
@@ -627,6 +638,16 @@ bpred_lookup(struct bpred_t *pred,	/* branch predictor instance */
 	{
 	  return btarget;
 	}
+
+
+
+	// CUSTOM Branch Addition, Tyler 6-15-2016
+	
+	case CustomPredictor:
+	return btarget;	   		
+	
+
+
     default:
       panic("bogus predictor class");
   }

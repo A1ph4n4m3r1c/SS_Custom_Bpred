@@ -915,6 +915,16 @@ sim_check_options(struct opt_odb_t *odb,        /* options database */
       /* static predictor, taken */
       pred = bpred_create(BPredNotTaken, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     }
+
+
+    else if (!mystricmp(pred_type, "CustomPredictor"))                 //CUSTOM Addition
+    {
+      /* CustomPredictor Mimics taken predictor*/
+      pred = bpred_create(BPredTaken, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    }
+
+
+
   else if (!mystricmp(pred_type, "bimod"))
     {
       /* bimodal predictor, bpred_create() checks BTB_SIZE */

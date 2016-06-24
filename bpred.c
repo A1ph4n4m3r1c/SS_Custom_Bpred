@@ -302,6 +302,10 @@ bpred_dir_config(
     fprintf(stream, "pred_dir: %s: predict not taken\n", name);
     break;
 
+  case CustomPredictor:   //CUSTOM Addition
+	fprintf(stream, "pred_dir: TEST");
+ break;
+
   default:
     panic("bogus branch direction predictor class");
   }
@@ -342,6 +346,9 @@ bpred_config(struct bpred_t *pred,	/* branch predictor instance */
   case BPredNotTaken:
     bpred_dir_config (pred->dirpred.bimod, "nottaken", stream);
     break;
+ case CustomPredictor:			//CUSTOM Addition
+	bpred_dir_config (pred->dirpred.bimod, "CustomPredictor", stream);
+ break;
 
   default:
     panic("bogus branch predictor class");
@@ -384,6 +391,10 @@ bpred_reg_stats(struct bpred_t *pred,	/* branch predictor instance */
     case BPredNotTaken:
       name = "bpred_nottaken";
       break;
+    case CustomPredictor:
+	name = "CustomPredictor";
+   break;
+
     default:
       panic("bogus branch predictor class");
     }
@@ -546,6 +557,7 @@ bpred_dir_lookup(struct bpred_dir_t *pred_dir,	/* branch dir predictor inst */
       break;
     case BPredTaken:
     case BPredNotTaken:
+    case CustomPredictor:
       break;
     default:
       panic("bogus branch direction predictor class");
@@ -826,7 +838,7 @@ bpred_update(struct bpred_t *pred,	/* branch predictor instance */
     }
 
   /* Can exit now if this is a stateless predictor */
-  if (pred->class == BPredNotTaken || pred->class == BPredTaken)
+  if (pred->class == BPredNotTaken || pred->class == BPredTaken || CustomPredictor) //CUSTOM Addition
     return;
 
   /* 
